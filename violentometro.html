@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <title>Violentometro</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="barra">
+            <a href="index.html">
+                <img src="img/Insituto de la mujer.png" alt="Insituto Municipal de La Mujer">
+            </a>
+
+            <nav>
+                <a href="#">Capacitaciones</a>
+                <a href="#">Noticas y Eventos</a>
+                <a href="#">Galeria</a>
+                <a href="#">¿Quienes Somos?</a>
+                <a href="violentometro.html">Violentómetro Interactivo</a>
+               
+            </nav>
+    </div>
+
+    <div class="row">
+
+        <div class="column" >
+            <div class="izquieda">
+                <img class="fotito" src="/img/violentometro interactiva-03.png" alt="Violentometro Interactivo">
+            </div>
+        </div>
+
+        <div class="column" >
+            <div class="derecha">
+               
+                <img class="texto"  src="/img/violentometro interactiva-08.png" alt="">
+                <a href="encuesta">
+                    <img class="participa" src="img/Participar.png" alt="">
+                </a>
+            </div>
+        </div>
+      </div>
+
+      
+        <div  class="centrar">
+            <img class="identificador" src="img/violentometro interactiva-05.png" alt="Identificar">
+        </div>
+
+        <div class="c">
+            <canvas id="MiGrafica" class="chart-container" style="position: relative; height:20vh; width:40vw"></canvas>
+        </div>
+
+        <div class="centrar">
+            <img id="encuesta" src="img/Termometro.png" alt="Violentometro">
+        </div>
+
+        <div " class="container">
+            <div>
+                <label>
+                    <input type="checkbox" value="value1" name="D1">
+                    <span>Bromas Hirentes</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value2" name="D2">
+                    <span>Chantaje</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value3" name="D3">
+                    <span>Mentir / Engañar</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value4" name="D4">
+                    <span>Ignorar / Ley del Hielo</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value5" name="D5">
+                    <span>Celar</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value6" name="D6">
+                    <span>Culpabilizar</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value7" name="D7">
+                    <span>Descalificar</span>
+                </label>
+            </div>
+
+            <div>
+                <label >
+                    <input type="checkbox" value="value8" name="D8">
+                    <span>Ridiculizar / Odender</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value9" name="D9">
+                    <span>Humillar en Público</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value10" name="D10">
+                    <span>Intimidar / Amenazar</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value11" name="D11">
+                    <span>Controlar / Prohibir</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value12" name="D12">
+                    <span>Destruir Objetos Personales</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value13" name="D13">
+                    <span>Manosear</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value14" name="D14">
+                    <span>Caricias Agresivas</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value15" name="D15">
+                    <span>Golpear "Jugando"</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value16" name="D16">
+                    <span>Pellizcar / Arañar</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value17" name="D17">
+                    <span>Empujar / Jalonear</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value18" name="D18">
+                    <span>Cachetear</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value19" name="D19">
+                    <span>Patear</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value20" name="D20">
+                    <span>Encerrar / Aislar</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value21" name="D21">
+                    <span>Amenazar con Obejetos o Armas</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value22" name="D22">
+                    <span>Amenazar de Muerte</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value23" name="D23">
+                    <span>Forzar Relación Sexual</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value24" name="D24">
+                    <span>Abuso Sexual</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value25" name="D25">
+                    <span>Violar</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value26" name="D26">
+                    <span>Mutilar</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" value="value27" name="D27">
+                    <span>Asesinar</span>
+                </label>
+            </div>
+
+        </div>
+    
+
+        <a  class="centrar " href="#">
+            <img  src="img/Identificar.png" alt="Participar">
+        </a>
+
+        
+    </header>
+
+    </div>
+
+    
+</body>
+    <script>
+        let myChart=document.getElementById('MiGrafica').getContext('2d');
+        
+        let violentometro = new Chart(myChart, {
+            type:'bar',
+            data:{
+                labels:['Bromas Hirientes','Chantajes','Mentir','Ley del Hielo','Celar','Culpabilizar','Ridiculizar','Humillar en publico','Intimidar','Contolar','Destruir Objetos Personales','Manosear','Caricias Afresivas','Golpear Jugando','Pellizcar','Empujar','Cachetear','Patear','Encerrar','Amenazar con Armas','Amenazar de Muerte','Forzar Relacion Sexual','Abuso Sexual','Violar','Mutilar','Asesinar'],
+                datasets:[{
+                    label:'afectadas',
+                    data:[
+                        16,
+                        10,
+                        20,
+                        11,
+                        15,
+                        16,
+                        10,
+                        20,
+                        11,
+                        15,
+                        16,
+                        10,
+                        20,
+                        11,
+                        15,
+                        16,
+                        10,
+                        20,
+                        11,
+                        15,
+                        16,
+                        10,
+                        20,
+                        11,
+                        15,
+                        5,
+                        10
+                    ]
+                }]
+            },
+            options:{}    
+        });
+    </script>
+</html>
